@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package pong;
-
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.JFrame;
 /**
  *
  * @author socamporomani
@@ -14,8 +16,9 @@ public class PONG {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+ public static void main(String[] args) {
+      Ventana frame = new Ventana();
+      frame.Window();
+      }
     
 }

@@ -12,11 +12,18 @@ import javax.swing.JFrame;
  * @author socamporomani
  */
 public class Ventana extends JFrame{
-   public void window(){
+    private ZonaJugable zona;
+private DesplazamientoPelota desplazamiento;
+    public void Window(){
        //crea la ventana
         setVisible(true);
         setSize(800,600);
         setTitle("PonG");
         setResizable(true);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        zona =new ZonaJugable();
+        add(zona);              // asi lo añadimos la zona de juego al jframe
+        desplazamiento=new DesplazamientoPelota(zona);
+        desplazamiento.start();
    }
 }

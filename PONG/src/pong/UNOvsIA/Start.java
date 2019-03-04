@@ -18,28 +18,24 @@ public class Start extends JFrame{
     private int estado=0; //0=jugando 1=fin 2=win
 private int toques=0;
 
-public Pong(){
+public Start(){
  
 }
 
 public void crearTablero(){
 //inicializar
  
-  for(int i=0;i<TAM;i++){
-    
-   for(int f=0;f<TAM;i++){
-      
+  
      
-       }
+  estado=0;
+  toques=0;
   
  }
-   estado=0;
- 
-  toques=0;
+   
  
   
    
-}
+
 
 public void update(Graphics g){
 

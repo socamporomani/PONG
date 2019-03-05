@@ -13,7 +13,7 @@ public class IA {
     public int y;
     public int tamanhoX;
     public int tamanhoY;
-    public int vy;
+    public int vY;
     private int realY;
     private Color colorRaqueta;
     
@@ -24,38 +24,38 @@ public class IA {
         this.tamanhoX=tamanhoX;
         this.tamanhoY=tamanhoY;
         this.colorRaqueta=colorRaqueta;
-        vy = 3;
+        vY = 3;
     }
     
             public void ComputerMove(Bola b) {
         realY = y + (tamanhoY / 2);
  
-        if (b.vx < 0) {
+        if (b.vX < 0) {
        
             if (realY < 150) {
-                y += vy;
+                y += vY;
             }
            
             else if (realY > 150) {
-                y -= vy;
+                y -= vY;
             }
-        } else if (b.vx > 0) {
+        } else if (b.vX > 0) {
         
             if ( realY != b.y) {
        
                 if (b.y < realY) {
-                    y -= vy;
+                    y -= vY;
                 }
       
                 else if (b.y > realY) {
-                    y += vy;
+                    y += vY;
                 }
             }
         }
     }
     
      
-    public void DrawStrick(Graphics g) {
+    public void dibujarRaqueta(Graphics g) {
         g.setColor(colorRaqueta);
         g.fillRect(x, y, tamanhoX, tamanhoY);
     }

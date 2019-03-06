@@ -9,6 +9,8 @@ import java.awt.Color;
 import javax.swing.JPanel;
 import java.awt.*;
 import java.awt.geom.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 /**
  *
  * @author r618b
@@ -31,5 +33,14 @@ public class ZonaJugable extends JPanel{
     }
     public void desplazarBola(){
         pelota.mover(getBounds());
+    }
+    public void iterarJego(){
+        while(true){
+            repaint();
+            try {
+                Thread.sleep(10); // se actualiza cada 6 Milisegundos
+            } catch (InterruptedException ex) {
+            }
+        }
     }
 }

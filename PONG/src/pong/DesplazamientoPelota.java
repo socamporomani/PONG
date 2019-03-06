@@ -24,7 +24,7 @@ public class DesplazamientoPelota extends Thread {
             
              try {
               
-                 Thread.sleep(50); /// cada 1 milisegundos se repite."controla la velocidad"
+                 Thread.sleep(5); /// cada 1 milisegundos se repite."controla la velocidad"
                  
                      
              } catch (InterruptedException ex) {

@@ -35,7 +35,7 @@ public class MoviminetoPelota {
         if (x+19 > limite.getMaxX()) {     //si la pelota alcanza el maximo de la zona jugable se cambia la direccion
             nx = -nx;
         }
-        if (y+19 > limite.getMaxY()) {  ///pongo 19porque es el tamaño de la pelota, si fuese +0 la pelota atraviesa el limite
+        if (y+19 > limite.getMaxY()) {  ///pongo 19 (igual que arriba)porque es el tamaño de la pelota, si fuese +0 la pelota atraviesa el limite
             ny = -ny;
         }
         if (x < 0) {
